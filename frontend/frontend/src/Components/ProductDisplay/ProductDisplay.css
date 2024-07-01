@@ -1,0 +1,107 @@
+.productdisplay {
+    display: flex;
+    margin: 0 170px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.productdisplay-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productdisplay-img-list img {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set a fixed height */
+    padding: 10px; /* Add padding for the frame effect */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent frame effect */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Light border for the frame */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    object-fit: cover; /* Ensure images cover the frame while maintaining aspect ratio */
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+}
+
+.productdisplay-main-img {
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Set a fixed height to match the width */
+    padding: 10px; /* Add padding for the frame effect */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent frame effect */
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Light border for the frame */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    object-fit: cover; /* Ensure images cover the frame while maintaining aspect ratio */
+}
+
+.productdisplay-right {
+    margin: 0 70px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allow flex to fill available space */
+}
+
+.productdisplay-right h1 {
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    gap: 5px;
+    color: black;
+    font-size: 16px;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    margin: 40px 0;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.productdisplay-right-price {
+    color: rgb(0, 0, 0);
+    margin-top: -25px;
+}
+
+.productdisplay-right-description1 button {
+    padding: 20px 40px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: rgb(33, 33, 32);
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease; /* Add transition for hover effect */
+}
+
+.productdisplay-right-description1 button:hover {
+    background: rgb(55, 55, 54); /* Darker background on hover */
+}
+
+.productdisplay-right-description {
+    margin-top: -20px;
+    line-height: 1.5; /* Improve readability with line height */
+}
+
+.productdisplay-right-category {
+    margin-top: 10px;
+}
+
+.productdisplay-right-category span {
+    font-weight: 600;
+}
+
+
